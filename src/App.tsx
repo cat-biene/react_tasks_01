@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AddStudent from "./components/AddStudent";
+import StudentItem from "./components/StudentItem";
+import StudentsList from "./components/StudentsList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <AddStudent/>
+        <StudentsList/>
     </div>
   );
 }
 
 export default App;
+
+// Задача: Форма обработки студентов.
+
+//Текст задачи: Создайте компонент AddStudent, который получает данные о студенте и сохраняет их в state.
+
+//Задача: Создание списка студентов.
+
+//Текст задачи: Создайте компонент StudentsList и StudentItem. В StudentsList создайте массив из студентов и реализуйте процесс вывода студентов в виде компонентов StudentItem.
+
